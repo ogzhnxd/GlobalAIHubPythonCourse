@@ -1,7 +1,7 @@
 ##################################################
 ## Global AI Hub Introduction to Python Programming Course
 ## Day 4 Homework Assignment 1
-## Find prime number between "0" and "100"
+## Find prime number between "0" and "1000"
 ##################################################
 ## Author: Oğuzhan GÜVERCİN
 ## Author Email: ogzhngvrcn00@gmail.com
