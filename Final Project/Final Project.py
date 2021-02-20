@@ -61,6 +61,9 @@ class Dishes:
     def washing(self):
         print("{} yıkanıyor...".format(', '.join(self.solidIngredients)).capitalize())
 
+    # I'm not including this part of the code cause it makes it insane long and
+    # it is already a pretty long code on it's own
+    # But i wanted to include it in comment form anyway
     # def measuring(self, ingredient):
     #
     #    if ingredient in self.solidIngredients:
