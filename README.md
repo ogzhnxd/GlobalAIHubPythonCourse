@@ -14,10 +14,12 @@ Recipes are Karnıyarık, rice and french fries. Basically my 3 favorite dishes.
 
 ## Requirements
 ```
-time library
+In some of homeworks i used Python's built-in random module
+In my final project i imported time again a built-in Python module
 ```
 ---
 
 ### Certification
-![](img/certificate_ex.png)
-
+```
+I didn't get my certificate yet. When i have it i will be uploading it here
+```
