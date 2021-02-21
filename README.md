@@ -6,16 +6,15 @@
 **Surname:** GÜVERCİN  
 **Email:** ogzhngvrcn00@gmail.com  
 
-Format of my homeworks is ".py".
+Format of my homeworks is ".py". This scripts were written via PyCharm and Python version 3.8.
 
-## Project Name
-Description of your project.
+## Recipe Maker
+A python script that cooks three different dishes and showing every step of the dish to user.
+Recipes are Karnıyarık, rice and french fries. Basically my 3 favorite dishes.
 
 ## Requirements
 ```
-Some python libraries
-Some python libraries
-Some python libraries
+time library
 ```
 ---
 
