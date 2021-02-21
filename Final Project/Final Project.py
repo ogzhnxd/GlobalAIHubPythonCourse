@@ -13,7 +13,7 @@ import time
 
 # A function to prettify strings
 def prettifyStrings(string):
-    # If sent variable isn't string turning into it
+    # If sent variable isn't string turning it into string
     string = str(string)
     # Deleting special characters from string
     string = string.translate({ord(i): None for i in '{}[](),\''})
@@ -32,7 +32,7 @@ class Dishes:
         self.pan = []
         self.containers = {"1.Kase": [], "2.Kase": [], "3.Kase": []}
 
-    # A method to add new ingiredients to ingredient lists
+    # A method to add new ingredients to ingredient lists
     def addNewIngredient(self):
         # Infinite loop
         while True:
@@ -82,7 +82,7 @@ class Dishes:
     #
     #        print("{} malzemesinden {}ml kadar ölçülüyor...".format(ingredient, measure))
 
-    # A static method to mix ingredients
+    # A static method to mix ingredients in the or in bowls
     @staticmethod
     def mixing(ingredients):
         # Mixing ingredients

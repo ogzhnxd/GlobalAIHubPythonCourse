@@ -43,4 +43,7 @@ for i in range(3):
                 continue
 
 # Printing the generated 3x3 Matrix
-print(matrix)
+print("{}\n".format(matrix))
+
+for i in matrix:
+    print(i)
