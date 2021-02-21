@@ -20,5 +20,6 @@ In my final project i imported time again a built-in Python module
 ---
 
 ### Certification
-![](img/certificate_ex.png)
-
+```
+I didn't get my certificate yet. When i have it i will be uploading it here
+```
