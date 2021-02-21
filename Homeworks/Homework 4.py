@@ -9,7 +9,7 @@
 
 # Importing required module
 import random
-
+from os import system
 # All of the special characters to filter user inputs
 numsChars = "01234567890!#$€é%&'()*+,-./:;<=>?@[\]^_`{|}~\""
 
@@ -18,11 +18,58 @@ numsChars = "01234567890!#$€é%&'()*+,-./:;<=>?@[\]^_`{|}~\""
 class Hangman:
 
     # Initializing object variables
-    def __init__(self, gameStates, wordList):
+    def __init__(self, gameStates, wordList, playMode=None):
         self.lives = 6
         self.stateNum = 0
         self.states = gameStates
         self.wordList = wordList
+        self.playMode = playMode
+
+    @staticmethod
+    def checkWord(word):
+        if any(c in numsChars for c in word):
+            print("Don't cheat >:(. Use of special characters and number is not allowed!")
+            return False
+        else:
+            return True
+
+    # A method to choose between Player vs Player and Computer vs Player
+    def choosePlayMode(self):
+        while True:
+            # Asking user for player mode
+            self.playMode = input("Enter 1 for Player vs Player mode or enter 2 for Computer vs Player mode :")
+            # If 1 is chosen
+            if self.playMode == "1":
+                # Select Player vs Player mode
+                print("You've chosen Player vs Player mode."
+                      "In this mode Player 1 is going to select a word and Player 2 will try to guess it.")
+
+                while True:
+                    # And ask Player 1 for a word and lowercase it
+                    word = input("Player 1 input your word don't let Player 2 see it :) :").lower()
+                    # If player 1 tries to choose a word with special characters
+                    if not self.checkWord(word):
+                        # Ask for another word
+                        continue
+                    # Else
+                    else:
+                        # Break
+                        break
+                # Return the word
+                return word
+            # If 2 is chosen
+            elif self.playMode == "2":
+                # Select Computer vs Player mode:
+                print(
+                    "You've chosen Computer vs Player mode."
+                    "In this mode Computer is going to select a word and Player 2 will try to guess it.")
+                # Select a word
+                word = self.selectWord()
+                return word
+            # If user typed a wrong input, inform user and ask for an mode selection again
+            else:
+                print("Wrong input! please only input 1 and 2 don't include any other characters.")
+                continue
 
     # A method to select a word from word pool
     def selectWord(self):
@@ -57,9 +104,9 @@ class Hangman:
         rightLetters = []
         wrongLetters = []
 
-        # Getting a random word from word pool
-        word = self.selectWord()
-
+        # Getting a random word from word pool or from Player 1
+        word = self.choosePlayMode()
+        system('cls')
         # Drawing game state and printing game info
         self.drawState()
         emptyLines = "_" * len(word)
@@ -96,7 +143,8 @@ class Hangman:
                 self.lives -= 1
                 self.stateNum += 1
                 wrongLetters.append(guessedLetter)
-
+            # Clear console
+            system('cls')
             # Updating game state and game info
             self.drawState()
             print("{} lives left".format(self.lives))
@@ -114,6 +162,7 @@ class Hangman:
         # If user ran out of lives finishing the game
         print("The word was {}".format(word))
         print("You have lost the game :(")
+
 
 # An ASCII art to display game states
 states = ['''
@@ -176,6 +225,7 @@ words = ('ant baboon badger bat bear beaver camel cat clam cobra cougar '
          'stork swan tiger toad trout turkey turtle weasel whale wolf '
          'wombat zebra ').split()
 
+print("WELCOME TO HANGMAN")
 # Initiating hangman class
 game = Hangman(gameStates=states, wordList=words)
 
