@@ -21,6 +21,6 @@ In my final project i imported "time" again a built-in Python module
 ---
 
 ### Certification
-![](img/certification.png)
+
 
 [Verifying Link](https://verified.cv/en/verify/70027767668583)
