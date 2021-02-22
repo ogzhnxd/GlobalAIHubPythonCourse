@@ -1,7 +1,7 @@
 # GAIH Student Repo
 ![](img/logo.png)
 
-**Course Date:** 01.02.2021 - 05.01.2021  
+**Course Date:** 15.02.2021 - 19.02.2021  
 **Name:** Oğuzhan  
 **Surname:** GÜVERCİN  
 **Email:** ogzhngvrcn00@gmail.com  
@@ -21,6 +21,6 @@ In my final project i imported "time" again a built-in Python module
 ---
 
 ### Certification
-
+![](img/certification.png)
 
 [Verifying Link](https://verified.cv/en/verify/83934536414177)
