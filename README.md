@@ -21,6 +21,4 @@ In my final project i imported "time" again a built-in Python module
 ---
 
 ### Certification
-```
-I didn't get my certificate yet. When i have it i will be uploading it here
-```
+![](img/Introduction to Python Programming Global AI Hub (Türkçe Eğitim 1-5 Şubat 2021).png)
