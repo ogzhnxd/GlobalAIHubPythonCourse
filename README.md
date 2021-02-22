@@ -21,4 +21,6 @@ In my final project i imported "time" again a built-in Python module
 ---
 
 ### Certification
-![](img/Introduction to Python Programming Global AI Hub (Türkçe Eğitim 1-5 Şubat 2021).png)
+![](img/certification.png)
+
+[Verifying Link](https://verified.cv/en/verify/70027767668583)
