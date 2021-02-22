@@ -6,7 +6,7 @@
 **Surname:** GÜVERCİN  
 **Email:** ogzhngvrcn00@gmail.com  
 
-Format of my homeworks is ".py". This scripts were written via PyCharm and Python version 3.8.
+Format of my homeworks is ".py". This scripts were written via PyCharm and Python version 3.8 .
 
 ## Recipe Maker
 A python script that cooks three different dishes and showing every step of the dish to user.
@@ -14,7 +14,7 @@ Recipes are Karnıyarık, rice and french fries. Basically my 3 favorite dishes.
 
 ## Requirements
 ```
-In some of homeworks i used Python's built-in "random" module and 
+In some of homeworks i used Python's built-in "random" module and
 "os" for clearing terminal in hangman script 
 In my final project i imported "time" again a built-in Python module
 ```
